@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const {execSync} = require('child_process');
 
 const runCommand = command => {
@@ -15,7 +17,7 @@ const runCommand = command => {
 
 const repoName = process.argv[2];
 const gitCheckOutCommand = `git clone --depth 1 https://github.com/Andrewbui389/express-ejs-mongoDB-template.git ${repoName}`;
-const installDepsCommand = `cd ${repo} && npm install`
+const installDepsCommand = `cd ${repoName} && npm install`
 
 console.log('cloning the repository')
 
@@ -27,4 +29,4 @@ if(!checkout) process.exit(-1)
 console.log(`Installing dependencies for ${repoName}`)
 
 const installedDeps = runCommand(installDepsCommand)
-if(!installDeps) process.exit(-1)
+if(!installedDeps) process.exit(-1)
