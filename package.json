@@ -1,6 +1,6 @@
 {
   "name": "andrew-bui-eem-skeleton",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Quick Express Project template to get  Method Override, PassPort, dotenv installed and ready",
   "bin": "./bin/cli.js",
   "scripts": {
