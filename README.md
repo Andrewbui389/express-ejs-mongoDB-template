@@ -3,3 +3,5 @@
 3. it should now appear in the directory you were in
 
 4. use node or nodemon to start project BUT a mongooseDB connection must be made in the .env file or else it will error along with a models folder needing to be created
+
+5. to link to repository cd into directory and run 'rm -rf .git' then you can proceed to reinitalize git and add to a remote repository as you normally would
